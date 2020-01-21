@@ -281,9 +281,6 @@ gcloud compute --project=$PROJECT instances create $NAME \
 ```bash
 gcloud compute ssh anaconda@$NAME --project=$PROJECT --zone=$ZONE
 ```
-```bash
-gcloud compute ssh anaconda@$NAME --project=$PROJECT --zone=$ZONE -- 'eval "$(/opt/anaconda3/bin/conda shell.bash hook)";jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser'
-```
 
 Запустим Jupyter Notebook:
 ```bash
